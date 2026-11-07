@@ -129,7 +129,7 @@ section { padding-block: 34px 6px; scroll-margin-top: 64px; }
 .rundown .what { min-width: 0; }
 .rundown .what strong { display: block; font-size: 1.02rem; }
 .rundown .what span { color: var(--muted); font-size: .9rem; }
-.rundown .tag { display: inline-block; margin-top: 6px; font-size: .74rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--navy); background: var(--gold); border-radius: 6px; padding: 2px 8px; }
+.rundown .what .tag { display: inline-block; margin-top: 6px; font-size: .74rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--navy); background: var(--gold); border-radius: 6px; padding: 2px 8px; }
 .rundown li.now { background: linear-gradient(90deg, rgba(242,102,90,.16), transparent 70%); border-radius: 10px; }
 .rundown li.now time { color: var(--coral); }
 .now-badge { display: none; margin-left: 6px; font-size: .7rem; font-weight: 800; letter-spacing: .1em; color: var(--coral); }
@@ -271,7 +271,7 @@ html { scroll-behavior: smooth; }
     <span class="pill" id="livePill"><span class="dot" aria-hidden="true"></span><span id="liveText">En vivo · Streaming</span></span>
     <span class="when">Miércoles 11 de noviembre · 8 hs</span>
   </div>
-  <p class="intro">Dos películas, ocho noticias reales y una pregunta: ¿las organizaciones ven a las personas antes de que alguien las obligue? Seguí el programa desde acá, jugá y votá cuando la mesa te avise.</p>
+  <p class="intro">Dos películas, dos noticias del mundo laboral y una pregunta: ¿las organizaciones ven a las personas antes de que alguien las obligue? Seguí el programa desde acá, jugá y votá cuando la mesa te avise.</p>
 </header>
 
 <nav class="nav" aria-label="Secciones">
@@ -290,15 +290,15 @@ html { scroll-behavior: smooth; }
     <div class="sec-head">
       <p class="eyebrow">Hoy en la mesa</p>
       <h2>Programa</h2>
-      <p class="sub">Unos 21 minutos. El bloque que está al aire se marca solo.</p>
+      <p class="sub">Unos 15 minutos. El bloque que está al aire se marca solo.</p>
     </div>
     <ol class="rundown" id="rundown">
-      <li data-start="0" data-end="2"><time>8:00</time><div class="what"><strong>Arranque <span class="now-badge">AL AIRE</span></strong><span>La mesa se presenta y entramos en clima.</span><br><span class="tag">Encuesta 1</span></div></li>
-      <li data-start="2" data-end="6"><time>8:02</time><div class="what"><strong>Noticiero global <span class="now-badge">AL AIRE</span></strong><span>Las dos pelis en un minuto y ocho titulares reales.</span><br><span class="tag">Jugá ¿Real o ficción?</span></div></li>
-      <li data-start="6" data-end="15"><time>8:06</time><div class="what"><strong>Cine vs. realidad <span class="now-badge">AL AIRE</span></strong><span>Tres temas: el título, el equipo y el liderazgo.</span><br><span class="tag">Encuesta 2</span></div></li>
-      <li data-start="15" data-end="16"><time>8:15</time><div class="what"><strong>Tanda <span class="now-badge">AL AIRE</span></strong><span>Impacto Coach by Tamara Martyniuk.</span></div></li>
-      <li data-start="16" data-end="19"><time>8:16</time><div class="what"><strong>El debunker de la IA <span class="now-badge">AL AIRE</span></strong><span>Lo que la IA hizo y lo que le corregimos.</span></div></li>
-      <li data-start="19" data-end="22"><time>8:19</time><div class="what"><strong>Cierre <span class="now-badge">AL AIRE</span></strong><span>La conclusión de la mesa y una pregunta para vos.</span><br><span class="tag">Encuesta 3</span></div></li>
+      <li data-start="0" data-end="1.5"><time>8:00</time><div class="what"><strong>Apertura <span class="now-badge">AL AIRE</span></strong><span>La mesa se presenta y entramos en clima.</span><br><span class="tag">Encuesta 1</span></div></li>
+      <li data-start="1.5" data-end="3.5"><time>8:01</time><div class="what"><strong>Noticiero global <span class="now-badge">AL AIRE</span></strong><span>Las dos pelis en un minuto y las dos noticias: la IA y el título.</span><br><span class="tag">Jugá ¿Real o ficción?</span></div></li>
+      <li data-start="3.5" data-end="11"><time>8:03</time><div class="what"><strong>Cine vs. realidad <span class="now-badge">AL AIRE</span></strong><span>Tres temas: el título, el equipo y el liderazgo.</span><br><span class="tag">Encuesta 2</span></div></li>
+      <li data-start="11" data-end="11.5"><time>8:11</time><div class="what"><strong>Tanda <span class="now-badge">AL AIRE</span></strong><span>Impacto Coach by Tamara Martyniuk.</span></div></li>
+      <li data-start="11.5" data-end="13.5"><time>8:11</time><div class="what"><strong>El debunker de la IA <span class="now-badge">AL AIRE</span></strong><span>Lo que la IA hizo y lo que le corregimos con el libro.</span></div></li>
+      <li data-start="13.5" data-end="15"><time>8:13</time><div class="what"><strong>Cierre <span class="now-badge">AL AIRE</span></strong><span>¿La IA entendió las relaciones humanas? La conclusión y una pregunta para vos.</span><br><span class="tag">Encuesta 3</span></div></li>
     </ol>
   </section>
 
@@ -393,28 +393,31 @@ html { scroll-behavior: smooth; }
       <details class="unit" id="u4">
         <summary><span><span class="u">U4</span>Recursos Humanos</span><svg class="chev" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg></summary>
         <dl>
-          <div><dt>Clima organizacional</dt><dd>Cómo percibe la gente el lugar donde trabaja.</dd></div>
-          <div><dt>Proceso de RRHH</dt><dd>Reclutar, seleccionar, orientar, capacitar, evaluar y compensar.</dd></div>
-          <div><dt>Especificación del puesto</dt><dd>Los requisitos que se le piden a la persona: título, experiencia, habilidades.</dd></div>
-          <div><dt>Entorno legal</dt><dd>Las leyes como factor externo que condiciona a RRHH, en 1961 y hoy.</dd></div>
+          <div><dt>Proceso de RRHH</dt><dd>Identificar y seleccionar, orientar y capacitar, y retener: evaluar y compensar.</dd></div>
+          <div><dt>Especificación del puesto</dt><dd>Los requisitos mínimos que tiene que cumplir la persona: título, experiencia, habilidades.</dd></div>
+          <div><dt>Errores de selección</dt><dd>Rechazar a alguien que habría rendido bien, o aceptar a alguien que rinde mal.</dd></div>
+          <div><dt>Pago basado en habilidades</dt><dd>Se paga por lo que la persona demuestra. El pago variable depende del desempeño.</dd></div>
+          <div><dt>Entorno legal</dt><dd>Uno de los factores externos que condicionan a RRHH, en 1961 y hoy.</dd></div>
         </dl>
       </details>
       <details class="unit" id="u5">
-        <summary><span><span class="u">U5</span>Grupos y equipos</span><svg class="chev" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg></summary>
+        <summary><span><span class="u">U5</span>Equipos y percepción</span><svg class="chev" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg></summary>
         <dl>
-          <div><dt>Grupo vs. equipo</dt><dd>El equipo tiene un objetivo común, responsabilidad compartida y sinergia.</dd></div>
-          <div><dt>Etapas del grupo</dt><dd>Formación, conflicto, normatividad, desempeño y desintegración.</dd></div>
-          <div><dt>Cohesión</dt><dd>Cuánto se sienten unidos los miembros y cuánto quieren seguir juntos.</dd></div>
+          <div><dt>Grupo vs. equipo</dt><dd>En el equipo el liderazgo es compartido y el trabajo y la responsabilidad son colectivos.</dd></div>
+          <div><dt>Etapas del grupo</dt><dd>Formación, tormenta, establecimiento de normas, desempeño y disolución.</dd></div>
+          <div><dt>Cohesión</dt><dd>Cuánto se sienten unidos los miembros. Se relaciona con la productividad.</dd></div>
+          <div><dt>Estereotipos y efecto de halo</dt><dd>Atajos para juzgar: por el grupo al que pertenece alguien, o por una sola característica.</dd></div>
+          <div><dt>Toma de decisiones</dt><dd>Modelo racional, racionalidad acotada o intuición.</dd></div>
         </dl>
       </details>
       <details class="unit" id="u6">
         <summary><span><span class="u">U6</span>Liderazgo</span><svg class="chev" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg></summary>
         <dl>
-          <div><dt>Liderazgo</dt><dd>Influir en un grupo para que logre sus metas, tenga o no el cargo.</dd></div>
+          <div><dt>Líder y liderazgo</dt><dd>El líder influye y tiene autoridad administrativa. El liderazgo es el proceso de influir en un grupo.</dd></div>
           <div><dt>Transaccional</dt><dd>Guía con objetivos, plazos, premios y castigos.</dd></div>
-          <div><dt>Transformacional</dt><dd>Inspira a ir más allá y cambia cómo la gente ve su trabajo.</dd></div>
-          <div><dt>Carismático</dt><dd>Genera seguidores por su convicción y su forma de ser.</dd></div>
-          <div><dt>Confianza</dt><dd>La base del liderazgo: integridad, competencia, coherencia, lealtad y apertura.</dd></div>
+          <div><dt>Transformacional</dt><dd>Inspira a ir más allá del interés propio. Se construye sobre el transaccional.</dd></div>
+          <div><dt>Carismático</dt><dd>Visión, riesgo personal, sensibilidad a los seguidores y conductas fuera de lo común.</dd></div>
+          <div><dt>Confianza</dt><dd>Tres tipos: basada en la disuasión, en el conocimiento y en la identificación (la más alta).</dd></div>
         </dl>
       </details>
     </div>
@@ -422,7 +425,7 @@ html { scroll-behavior: smooth; }
 </main>
 
 <footer class="wrap">
-  <p class="names">Felipe Graham · Ana Romañach · Marcelo Sarlinga · Maximiliano Vanney · Leandro Vázquez</p>
+  <p class="names">Felipe Graham · Ana Romañach · Marcelo Sarlinga · Leandro Vázquez</p>
   <p>TP de Principios de Administración · IFTS N°1</p>
 </footer>
 
@@ -441,7 +444,7 @@ html { scroll-behavior: smooth; }
 <script>
 /* Links de las encuestas: pegar acá el link de cada formulario de Google. Vacío = botón desactivado. */
 const POLLS = [
-  { moment: "Arranque", question: "¿Alguna vez trabajaste en un lugar donde nadie veía lo que hacías?",
+  { moment: "Apertura", question: "¿Alguna vez trabajaste en un lugar donde nadie veía lo que hacías?",
     form: "https://docs.google.com/forms/d/e/1FAIpQLScFCtPv3gGg6MPdS0cT1FyOhOgudYRzMIwr9w7DGSoTCWb0ZA/viewform",
     csv: "https://docs.google.com/spreadsheets/d/e/2PACX-1vREedJ9oyQwK7NC5X_h7d4BhBCCrumxp2N5sfTz7yhVcCOnrRrXtCpbw3JiqMOIkZRb9sW3FFPrdaUs/pub?gid=1990450857&single=true&output=csv",
     options: ["Sí, me pasó", "No, nunca", "Todavía no trabajé"] },
@@ -449,25 +452,25 @@ const POLLS = [
     form: "https://docs.google.com/forms/d/e/1FAIpQLSfJw1aIvmM7fRP5fuBaGx8XP5_6I9JfYOuQDBDWohQmCqv1ug/viewform",
     csv: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTEYi3B6FXc_9HRsyfYsjMTCwiXPyl-gjGkMgIPNpKJ4m_3PRiVHGS1r-SjrF1UAMQTK4vXRi5oBUc-/pub?gid=163556739&single=true&output=csv",
     options: ["Sí, la gente la sigue", "No, choca con todos", "Depende de la empresa"] },
-  { moment: "Cierre", question: "¿Las organizaciones ven a las personas antes de que alguien las obligue?",
+  { moment: "Cierre", question: "¿La IA puede entender las relaciones humanas en una empresa?",
     form: "https://docs.google.com/forms/d/e/1FAIpQLScljnfLMx2iOwwPYVHgXauKazbNUPd0-ElEu4ah3IX9aK2mwg/viewform",
     csv: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRUDDYRj4Jez3jci2spvdAhpg4QIHMFkO1OhSY5l8KzlxvhbaO5p2qcuu_4es9GdQrDfFKTg792Na8n/pub?output=csv",
-    options: ["Sí, casi siempre", "A veces", "Casi nunca"] }
+    options: ["Sí, ya las entiende", "En parte", "No, eso lo ponen las personas"] }
 ];
 
 const QUIZ = [
-  { s: "Una empresa aceptó pagar 10.300 millones de dólares por contaminar el agua potable de ciudades de EE.UU.", real: true, why: "Fue 3M, en 2023, por los llamados \"químicos eternos\" (PFAS). Erin había logrado 333 millones." },
-  { s: "La sede central de la NASA lleva el nombre de Mary W. Jackson.", real: true, why: "Desde 2020. Además, está sobre la calle Hidden Figures Way." },
-  { s: "Erin Brockovich era abogada recibida cuando ganó el caso de Hinkley.", real: false, why: "No tenía título. Entró al estudio en un puesto administrativo." },
+  { s: "En el primer semestre de 2026, empresas de EE.UU. atribuyeron más de 100.000 despidos a la inteligencia artificial.", real: true, why: "Fueron 101.743 despidos anunciados. Es la IBM de Dorothy, pero hoy." },
+  { s: "La mayoría de las empresas piensa reemplazar a su personal por IA en lugar de capacitarlo.", real: false, why: "Al revés: el 77% va a invertir en recapacitar a su gente en los próximos cinco años (Foro Económico Mundial)." },
+  { s: "En la peli, Dorothy aprende a programar la IBM con un libro que saca a escondidas de una biblioteca para blancos.", real: true, why: "Aprende FORTRAN sola y después capacita a todo su grupo. Capacitación y equipo, U4 y U5." },
+  { s: "Desde 2026, la mayoría de los empleadores de EE.UU. contrata para puestos de entrada mirando habilidades y no el título.", real: true, why: "El 70%, según el informe Job Outlook 2026 de NACE." },
+  { s: "Las empresas que dejaron de pedir título empezaron a contratar a muchísimas personas sin título.", real: false, why: "Un estudio de Harvard y Burning Glass mostró que el 45% lo hizo \"solo de nombre\": en algunas, menos de 1 de cada 700 contrataciones fue de alguien sin título." },
+  { s: "Erin Brockovich era abogada recibida cuando ganó el caso de Hinkley.", real: false, why: "No tenía título. Entró al estudio en un puesto administrativo. Hoy la contratarían por habilidades... ¿o no?" },
   { s: "Al Harrison, el jefe que rompe el cartel del baño, existió tal cual en la NASA.", real: false, why: "Es un personaje creado para la película a partir de varios jefes reales." },
-  { s: "En Córdoba, un grupo de madres logró el primer juicio del país por fumigar con agroquímicos cerca de las casas.", real: true, why: "Las Madres de Ituzaingó. En 2012 hubo dos condenas y Sofía Gatica ganó el Premio Goldman." },
-  { s: "La verdadera Erin Brockovich volvió a aparecer en 2023, en un pueblo de Ohio contaminado por un tren.", real: true, why: "Fue en East Palestine. La empresa del tren aceptó pagar 600 millones de dólares a los vecinos." },
-  { s: "En la peli, Katherine tiene que ir a otro edificio porque en el suyo no hay computadoras.", real: false, why: "Va a otro edificio porque en el suyo no hay baño para mujeres negras." },
-  { s: "En 2024, una de cada tres empresas de EE.UU. dejó de pedir título universitario para algunos puestos.", real: true, why: "Aunque un estudio mostró que muchas siguieron contratando igual que antes." }
+  { s: "En la peli, Katherine tiene que ir a otro edificio porque en el suyo no hay computadoras.", real: false, why: "Va a otro edificio porque en el suyo no hay baño para mujeres negras. Harrison la reta sin saberlo: error fundamental de atribución." }
 ];
 
 /* ---------- Juego ---------- */
-const KEY = "edt-quiz-v1";
+const KEY = "edt-quiz-v2";
 function loadAnswers() { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { return {}; } }
 function saveAnswers(a) { try { localStorage.setItem(KEY, JSON.stringify(a)); } catch (e) {} }
 let answers = loadAnswers();
@@ -557,8 +560,9 @@ async function loadResults(i) {
     const rows = parseCSV(await r.text()).filter(x => x.some(c => c.trim() !== ""));
     const answers = rows.slice(1).map(x => (x[1] || "").trim()).filter(Boolean);
     const map = new Map(p.options.map(o => [o, 0]));
-    answers.forEach(a => map.set(a, (map.get(a) || 0) + 1));
-    drawResults(i, [...map.entries()], answers.length);
+    const valid = answers.filter(a => map.has(a));
+    valid.forEach(a => map.set(a, map.get(a) + 1));
+    drawResults(i, [...map.entries()], valid.length);
     pollUI[i].status.textContent = "Se actualiza solo";
   } catch (e) {
     pollUI[i].status.textContent = "No pude cargar el resultado. Reintento en unos segundos.";
